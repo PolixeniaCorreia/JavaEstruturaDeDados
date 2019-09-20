@@ -42,7 +42,7 @@ public class Vetor {
 		
 		if(this.tamanho < this.elementos.length) {
 			this.elementos[this.tamanho] = elemento;
-			System.out.println(""+this.elementos[this.tamanho]);
+//			System.out.println(""+this.elementos[this.tamanho]);
 			this.tamanho++;
 			
 		return true;
@@ -52,6 +52,13 @@ public class Vetor {
 	
 	public int tamanho() {
 		return this.tamanho;
+	}
+	public String Busca(int posicao) {
+		if(!(posicao >= 0 && posicao < tamanho)) {
+			throw new IllegalArgumentException("POSIÇÃO INVÁLIDA!!!");
+		}
+	
+		return this.elementos[posicao];
 	}
 	
 	@Override

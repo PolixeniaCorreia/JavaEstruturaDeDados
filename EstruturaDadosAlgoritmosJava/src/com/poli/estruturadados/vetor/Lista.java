@@ -72,6 +72,19 @@ public class Lista<T> {
 		}
 		return -1;
 	}
+	
+	public boolean Contem(T elemento) {
+		
+//		int pos = Busca(elemento);
+//		if(pos > -1) {
+//			
+//			return true;
+//		}
+//		
+//		return false;
+		
+		return Busca(elemento) > -1;
+	}
 
 	public void Remover(int posicao) {
 		if(!(posicao >= 0 && posicao < tamanho)) {

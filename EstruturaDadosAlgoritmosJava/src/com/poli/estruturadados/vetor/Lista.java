@@ -55,6 +55,10 @@ public class Lista<T> {
 		}
 	}
 
+	public T Obtem(int posicao) {
+		return this.Busca(posicao);
+	}
+	
 	public T Busca(int posicao) {
 		if(!(posicao >= 0 && posicao < tamanho)) {
 			throw new IllegalArgumentException("POSIÇÃO INVÁLIDA!!!");

@@ -108,6 +108,18 @@ public class Lista<T> {
 		}
 	}
 	
+	public void Limpar() {
+		
+//		this.elementos = (T[]) new Object[this.elementos.length];
+//		
+//		this.tamanho = 0;
+		
+		for( int i = 0; i < this.tamanho; i++) {
+			this.elementos[i] = null;
+		}
+		this.tamanho = 0;
+	}
+	
 	@Override
 	public String toString(){
 

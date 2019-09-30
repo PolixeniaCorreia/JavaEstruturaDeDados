@@ -96,6 +96,14 @@ public class Lista<T> {
 		tamanho--;
 	}
 
+	public void Remover(T elemento) {
+		int pos = this.Busca(elemento);
+		
+		if(pos > -1) {
+			this.Remover(pos);
+		}
+	}
+	
 	@Override
 	public String toString(){
 

@@ -77,6 +77,17 @@ public class Lista<T> {
 		return -1;
 	}
 	
+	public int ultimoIndice(T elemento) {
+		
+		for(int i = this.tamanho-1; i >= 0; i--) {
+			if(this.elementos[i].equals(elemento)) {
+				return i;
+			}
+		}
+		
+		return -1;
+	}
+	
 	public boolean Contem(T elemento) {
 		
 //		int pos = Busca(elemento);

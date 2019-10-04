@@ -19,6 +19,7 @@ public class Aula07 {
 		System.out.println(vetor);	
 		vetor.Adicionar(3, "D");
 		System.out.println(vetor);
+		
 	}	
 
 }

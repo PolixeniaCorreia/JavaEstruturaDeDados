@@ -2,8 +2,8 @@ package com.poli.estruturadados.base;
 
 public class EstruturaEstatica<T> {
 
-	private T[] elementos;
-	private int tamanho;
+	protected T[] elementos;
+	protected int tamanho;
 
 	public EstruturaEstatica(int capacidade) {
 		this.elementos = (T[]) new Object[capacidade];
@@ -21,7 +21,7 @@ public class EstruturaEstatica<T> {
 		if(this.tamanho < this.elementos.length) {
 			this.elementos[this.tamanho] = elemento;
 			this.tamanho++;
-
+			
 			return true;
 		}
 		return false;

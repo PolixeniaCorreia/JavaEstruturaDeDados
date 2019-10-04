@@ -11,12 +11,6 @@ public class aula13 {
 		System.out.println(pilha);
 		System.out.println(pilha.tamanho());
 		
-		
-	
-		
-	
-		
-		
 	}
 
 }

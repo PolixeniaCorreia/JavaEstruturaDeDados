@@ -48,7 +48,7 @@ public class Exer07 {
 	public static String decimalQualquerBase(int numero, int base) {
 		
 		if(base > 16) {
-			throw new IllegalArgumentException("DIGITE UMA BASE VÁLIDA.");
+			throw new IllegalArgumentException("DIGITE UMA BASE VÁLIDA.  ");
 		}
 
 		Stack<Integer> pilha = new Stack<>();

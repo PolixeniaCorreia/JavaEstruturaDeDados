@@ -13,7 +13,7 @@ public class EstruturaEstatica<T> {
 	public EstruturaEstatica(){
 		this(10);
 	}
-	
+
 	public boolean estaVazia() {
 		return this.tamanho == 0;
 	}
@@ -25,7 +25,7 @@ public class EstruturaEstatica<T> {
 		if(this.tamanho < this.elementos.length) {
 			this.elementos[this.tamanho] = elemento;
 			this.tamanho++;
-			
+
 			return true;
 		}
 		return false;
@@ -46,6 +46,19 @@ public class EstruturaEstatica<T> {
 		this.tamanho++;
 
 		return true  ;
+	}
+	
+	public void remove(int posicao){
+
+		if (!(posicao >= 0 && posicao < tamanho)){
+			throw new IllegalArgumentException("Posicao inválida");
+		}
+
+		for (int i = posicao; i < tamanho-1; i++){
+			elementos[i] = elementos[i+1];
+		}
+
+		tamanho--;
 	}
 
 	private void AumentaCapacidade() {
@@ -80,21 +93,4 @@ public class EstruturaEstatica<T> {
 		return s.toString(); 
 
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

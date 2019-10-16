@@ -41,6 +41,6 @@ public class Fila<T> extends EstruturaEstatica<T> {
 		this.remove(POS);
 		
 		return elementoRemover;
-	}
-
+	}	
+	
 }
